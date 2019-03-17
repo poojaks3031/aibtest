@@ -1,9 +1,7 @@
 node('maven-label'){
    def mvnHome
-   stage('Preparation') { 
-     
-      git 'https://github.com/poojaks3031/aibtest.git'
-                
+   stage('Preparation') {
+      git 'https://github.com/poojaks3031/aibtest.git'         
       mvnHome = tool 'mvn'
    }
    stage('Build') {
